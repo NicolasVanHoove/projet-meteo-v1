@@ -1,0 +1,175 @@
+/***********************/
+/****** ALL PAGE *******/
+/***********************/
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #38ada97e;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/*************************/
+/* ALL WEATHER-CONTAINER */
+/*************************/
+
+#weather-container {
+    height: 100%;
+    width: 100%;
+    background-color: #1e3799;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 4px solid whitesmoke;
+}
+
+/***********************/
+/* CONTAINER's HEADER  */
+/***********************/
+
+#header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 1rem .5rem;
+    border-bottom: 2px solid whitesmoke;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+#header i {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+/**********************/
+/** CONTAINER's MAIN **/
+/**********************/
+
+#main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#weather-icon {
+    width: 10rem; 
+    height: 10rem;
+    align-self: center;
+}
+
+#main p {
+    margin-bottom: 1.5rem;
+}
+
+#temperature {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+#description {
+    text-transform: capitalize;
+}
+
+#city-name {
+    display: flex;
+    align-self: center;
+}
+
+#city-name p {
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/**********************/
+/* CONTAINER's FOOTER */
+/**********************/
+
+#footer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid lightgray;
+}
+
+#right-part {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-part i{
+    font-size: 2rem;
+}
+
+#container-humidity {
+    display: flex;
+    flex-direction: column;
+}
+
+#container-humidity p{
+    margin-left: 0.5rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+#left-part {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid lightgray;
+}
+
+#left-part i{
+    font-size: 2.2rem;
+}
+
+#container-feelslike {
+    display: flex;
+    flex-direction: column;
+}
+
+#container-feelslike p{
+    margin-left: 0.5rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/****************************/
+/* SET RESPONSIVE PARAMETER */
+/****************************/
+
+@media screen and (min-width: 1024px) {
+    #weather-container {
+        width: 30%;
+        height: 90%;
+        margin: 2rem auto;
+    }
+
+    #header {
+        height: 15%;
+    }
+
+    #main {
+        height: 70%;
+    }
+
+    #footer {
+        height: 15%;
+    }
+}
